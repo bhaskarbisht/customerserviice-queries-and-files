@@ -1,0 +1,21 @@
+docker image ls
+docker ps
+
+docker ps -a
+docker stop containerid
+docker start containerid
+docker rm containerid --delete container
+docker inspect imageid
+docker inspect conntainerid
+docker logs containerid
+docker exec -it 0ce70836a61d  /bin/sh
+
+docker build -t bhaskarbisht2/serviceregistry:0.0.1 .
+
+docker run -d -p 8761:8761 --name serviceregistry imageid
+
+ docker run -d -p 8081:8081 -e EUREKA_SERVER_ADDRESS=http://host.docker.internal:8761/eureka --name customerdetails 547dd15707a1
+
+docker login
+
+docker push bhaskarbisht2/serviceregistry:0.0.1

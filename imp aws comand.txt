@@ -1,0 +1,10 @@
+s3
+wget link
+
+docker commands
+docker build -t spring-boot-docker.jar .
+docker image ls
+docker run -p 9090:8080 spring-boot-docker.jar
+
+install docker on ec2
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html
